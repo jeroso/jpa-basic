@@ -16,15 +16,8 @@ public class JpaMain {
         //code
         try {
 
-            Team team = new Team();
-            team.setName("TeamA");
-            em.persist(team);
-
-            Member member = new Member();
-            member.setName("member1");
-//            member.changeTeam(team);
-            em.persist(member);
-            team.addMember(member);
+            Order order = new Order();
+            order.addOrderItem(new OrderItem());
 //            em.flush();
 //            em.clear();
 
